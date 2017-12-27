@@ -8,13 +8,13 @@ This is a collection of scripts for ISC catalogue data request and download.
 - Python modules
   - `request`
   - `re`
-  - `get` `query` `public` `post`
+  - `get` `query-string` `public` `post`
 
 For Mac OSX
 
       sudo python3 -m pip install requests
       sudo python3 -m pip install get query-string public post
-  
+
 ## Usage ##
 
 1. 在`setting.py`文件中配置请求信息。
