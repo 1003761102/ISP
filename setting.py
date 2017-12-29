@@ -1,4 +1,5 @@
 keys=['EVENTID','REPORTER','STA','LAT','LON','ELEV','CHN','DIST','BAZ','ISCPHASE','REPPHASE','DATE','TIME','RES','TDEF','AMPLITUDE','PER','AUTHOR','DATE','TIME','LAT','LON','DEPTH','AUTHOR','TYPE','MAG']
+sleeptime=30
 filename='test1.txt'
 query={
     'iscreview':'on',

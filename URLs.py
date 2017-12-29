@@ -1,4 +1,6 @@
 import requests
+import time
+from setting import *
 def get_url(query):
     headers={
         'Referer':'http://isc-mirror.iris.washington.edu/iscbulletin/search/arrivals/',
@@ -9,4 +11,4 @@ def get_url(query):
         r=requests.get(base_url,params=query,headers=headers)
         return r.text
     except:
-        print('Failed to download html')
+         return None
