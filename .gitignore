@@ -1,3 +1,5 @@
 '*driver*'
 '*result*'
-'*test*'
+'ISC/test*'
+'ISC/idea*'
+'ISC/*pycache*'

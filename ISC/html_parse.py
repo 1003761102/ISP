@@ -1,8 +1,5 @@
 import re
 def parser(html,filename):
-
-    f=open('result.html','w')
-    f.write(html)
     fw=open(filename,'w')
     pattern='LON.*?(<a .*?)STOP'
     items=re.findall(pattern,html,re.S).pop().strip().split('\n')

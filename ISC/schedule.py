@@ -1,11 +1,11 @@
 import time
 
-from ISC.URLs import get_url
-from ISC.html_parse import parser
-from ISC.setting import *
+from URLs import get_url
+from html_parse import parser
+from setting import sleeptime
 
 
-def start(query):
+def start(query,filename):
     html=get_url(query)
     if html:
         if not parser(html,filename):
@@ -17,5 +17,4 @@ def start(query):
         print('Failed to connect website, Please check if website is valid. And we will try to connect website again')
         time.sleep(sleeptime*60)
         start(query)
-if __name__=='__main__':
-    start(query)
+
