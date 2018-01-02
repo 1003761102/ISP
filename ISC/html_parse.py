@@ -1,9 +1,10 @@
 import re
 def parser(html,filename):
     fw=open(filename,'w')
-    pattern='LON.*?(<a .*?)STOP'
-    items=re.findall(pattern,html,re.S).pop().strip().split('\n')
+    pattern='DEPTH.*AUTHOR.*TYPE.*MAG(.*?)STOP'
+    items=re.findall(pattern,html,re.S)
     if items:
+        items=items.pop().strip().split('\n')
         for item in items:
             item_tem=item.strip().split(',')
             for item_fin in item_tem:
